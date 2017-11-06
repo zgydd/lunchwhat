@@ -28,13 +28,11 @@ var successCollectionCallBack = function(resultData) {
     __activeList__.length = 0;
     __runtimeTimes__ = 0;
     $('.show-list').empty();
-    var html = '<table class="table table-striped">';
-    html += '<tr>';
+    var html = '<table class="table table-striped table-bordered">';
     html += '<th>待选店名</th>';
     html += '<th>该回权重</th>';
     html += '<th>前回日期</th>';
     html += '<th>选择回数</th>';
-    html += '</tr>';
 
     for (var i = 0; i < resultData.length; i++) {
         html += '<tr>';
